@@ -48,10 +48,12 @@ If you want to contact me you can reach me at [pathakanurag605@gmail.com](mailto
 
 Happy coding! 🎉🎉🎉
 
-## Connect with me 🌐
+## Author
 
-[<img align="left" alt="LinkedIn" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][linkedin]
-[<img align="left" alt="Twitter" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][twitter]
+- **Anurag Pathak** -
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)](https://github.com/ANURAG-PATHAK)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/anuragpathak0/)
+[![Twitter](https://img.shields.io/badge/-Twitter-blue?style=flat-square&logo=twitter)](https://twitter.com/_Anurag__Pathak)
 
-[linkedin]: https://www.linkedin.com/in/anuragpathak0/
-[twitter]: https://twitter.com/_Anurag__Pathak
+License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
