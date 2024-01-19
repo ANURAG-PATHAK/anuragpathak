@@ -6,7 +6,6 @@ import { Content, KeyTextField, asLink } from "@prismicio/client";
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
 import { MdMenu, MdClose } from "react-icons/md";
-import Button from "./Button";
 import { usePathname } from "next/navigation";
 
 export default function NavBar({
@@ -34,7 +33,7 @@ export default function NavBar({
         <div
           className={clsx(
             "fixed bottom-0 left-0 right-0 top-0 z-50 flex flex-col items-end gap-4 bg-slate-50 pr-4 pt-14 transition-transform duration-300 ease-in-out md:hidden",
-            open ? "translate-x-0" : "translate-x-[100%]"
+            open ? "translate-x-0" : "translate-x-[100%]",
           )}
         >
           <button
@@ -50,7 +49,7 @@ export default function NavBar({
               <li className="first:mt-8">
                 <PrismicNextLink
                   className={clsx(
-                    "group relative block overflow-hidden rounded px-3 text-3xl font-bold text-slate-900 "
+                    "group relative block overflow-hidden rounded px-3 text-3xl font-bold text-slate-900 ",
                   )}
                   field={link}
                   onClick={() => setOpen(false)}
@@ -65,7 +64,7 @@ export default function NavBar({
                       "absolute inset-0 z-0 h-full translate-y-12 rounded bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
                       pathname.includes(asLink(link) as string)
                         ? "translate-y-6"
-                        : "translate-y-18"
+                        : "translate-y-18",
                     )}
                   />
                   <span className="relative">{label}</span>
@@ -81,13 +80,6 @@ export default function NavBar({
               )}
             </React.Fragment>
           ))}
-          <li>
-            <Button
-              linkField={settings.data.cta_link}
-              label={settings.data.cta_label}
-              className="ml-3"
-            />
-          </li>
         </div>
         <DesktopMenu settings={settings} pathname={pathname} />
       </ul>
@@ -121,7 +113,7 @@ function DesktopMenu({
           <li>
             <PrismicNextLink
               className={clsx(
-                "group relative block overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900"
+                "group relative block overflow-hidden rounded px-3 py-1 text-base font-bold text-slate-900",
               )}
               field={link}
               aria-current={
@@ -133,7 +125,7 @@ function DesktopMenu({
                   "absolute inset-0 z-0 h-full rounded bg-yellow-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
                   pathname.includes(asLink(link) as string)
                     ? "translate-y-6"
-                    : "translate-y-8"
+                    : "translate-y-8",
                 )}
               />
               <span className="relative">{label}</span>
@@ -149,14 +141,6 @@ function DesktopMenu({
           )}
         </React.Fragment>
       ))}
-      <li>
-        <Button
-          linkField={settings.data.cta_link}
-          label={settings.data.cta_label}
-          showIcon
-          className="ml-3"
-        />
-      </li>
     </div>
   );
 }

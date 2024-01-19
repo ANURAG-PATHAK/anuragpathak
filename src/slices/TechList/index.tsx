@@ -45,7 +45,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
               : gsap.utils.random(600, 400);
           },
           ease: "power1.inOut",
-        }
+        },
       );
     }, component);
     return () => ctx.revert();
@@ -70,7 +70,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
           {Array.from({ length: 15 }, (_, index) => (
             <React.Fragment key={index}>
               <span
-                className="tech-item text-8xl font-extrabold uppercase  tracking-tighter"
+                className="tech-item text-8xl font-extrabold uppercase tracking-tighter"
                 style={{
                   color: index === 7 && tech_color ? tech_color : "inherit",
                 }}

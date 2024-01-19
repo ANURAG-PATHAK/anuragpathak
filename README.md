@@ -22,13 +22,13 @@ To get a local copy up and running, follow these simple steps:
 git clone https://github.com/your_username_/Project-Name.git
 ```
 
-2. Install NPM packages
+2.Install NPM packages
 
 ```sh
 npm install
 ```
 
-3. Start the development server
+3.Start the development server
 
 ```sh
 npm run dev
