@@ -16,9 +16,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: settings.data.meta_title,
     description: settings.data.meta_description,
-    // openGraph: {
-    //   images: [settings.data.og_image?.url || ""],
-    // },
+    openGraph: {
+      images: [settings.data.og_image?.url || ""],
+    },
   };
 }
 
@@ -35,8 +35,8 @@ export default function RootLayout({
         <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
         <div className="pointer-events-none absolute inset-0 -z-40 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light"></div>
         <Footer />
-        <PrismicPreview repositoryName={repositoryName} />
       </body>
+      <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
 }
