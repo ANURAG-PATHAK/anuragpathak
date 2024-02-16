@@ -27,6 +27,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
           start: "top bottom",
           end: "bottom top",
           scrub: 4,
+          markers: true,
         },
       });
       tl.fromTo(
@@ -62,13 +63,25 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
         </Heading>
       </Bounded>
       {slice.items.map(({ tech_color, tech_name }, index) => (
+        <div key={index} className="flex items-center justify-center gap-4">
+          <span
+            className="tech-item text-8xl font-extrabold uppercase tracking-tighter"
+            style={{
+              color: tech_color ? tech_color : "inherit",
+            }}
+          >
+            {tech_name}
+          </span>
+        </div>
+      ))}
+      {slice.items.map(({ tech_color, tech_name }, index) => (
         <div
           key={index}
           className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700"
           aria-label={tech_name || undefined}
         >
           {Array.from({ length: 15 }, (_, index) => (
-            <React.Fragment key={index}>
+            <div key={index} className="hidden md:flex items-center justify-center gap-4">
               <span
                 className="tech-item text-8xl font-extrabold uppercase tracking-tighter"
                 style={{
@@ -80,7 +93,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
               <span className="text-3xl">
                 <MdCircle />
               </span>
-            </React.Fragment>
+            </div>
           ))}
         </div>
       ))}
