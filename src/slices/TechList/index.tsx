@@ -27,7 +27,6 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
           start: "top bottom",
           end: "bottom top",
           scrub: 4,
-          markers: true,
         },
       });
       tl.fromTo(
@@ -63,7 +62,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
         </Heading>
       </Bounded>
       {slice.items.map(({ tech_color, tech_name }, index) => (
-        <div key={index} className="flex items-center justify-center gap-4">
+        <div key={index} className="md:hidden flex items-center justify-center gap-4">
           <span
             className="tech-item text-8xl font-extrabold uppercase tracking-tighter"
             style={{
