@@ -11,6 +11,7 @@ This portfolio is a reflection of my journey in the world of software developmen
 - **[Next.js](https://nextjs.org/)**: A React framework that enables server-side rendering and generating static websites for React based web applications.
 - **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 - **[GSAP](https://greensock.com/gsap/)**: Professional-grade JavaScript animation for the modern web. GSAP is robust, compatible, flexible, and extensible.
+- **[Prismic CMS](https://prismic.io/)**: A headless CMS that provides a clean and structured way to create, manage, and distribute content.
 
 ## Getting Started 🚀
 
